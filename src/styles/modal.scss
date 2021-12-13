@@ -1,0 +1,42 @@
+.modalContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 600px;
+  background-color: var(--dk-bg2);
+  position: absolute;
+  z-index: 10;
+  right: 0;
+
+  animation: slide 0.5s ease-in-out;
+}
+ .modalContainer img{ 
+   width: 90%;
+ }
+
+ .modalContainer div{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   margin-top: 10px;
+   span{
+     margin-top: 15px;
+     text-indent: 1em;
+   }
+ }
+
+ @keyframes slide{
+   0%{
+     right: -500px;
+     opacity: 0;
+   }
+   100%{
+     right: 0;
+     opacity: 1;
+   }
+ }
