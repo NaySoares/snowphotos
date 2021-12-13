@@ -1,0 +1,30 @@
+.aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px;
+
+  width: 100%;
+  max-width: 70px;
+  height: 100vh;
+  margin-right: auto;
+  background-color: var(--dk-bg2);
+}
+
+.aside img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.aside img:last-child{
+  border: 2px solid #ffff;
+}
+
+.aside span{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  transform: rotate(90deg);
+}
