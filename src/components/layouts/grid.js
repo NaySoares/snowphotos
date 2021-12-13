@@ -1,28 +1,30 @@
-import Pin from '../pin'
-import '../../styles/layoutGrid.css'
+import { useContext } from 'react'
+import Pin from "../pin";
+import DataImg from "../../api/data";
+import Modal from '../modal'
+import UserContext from '../../context';
+
+import "../../styles/layoutGrid.css";
 
 export const GridLayout = () => {
-  const vertical = 18;
-  const horizontal = 40;
-  const misto = 30;
+  const { state, setState } = useContext(UserContext)
+
   return (
     <div className="pinContainer">
-      <Pin size={horizontal}/>
-      <Pin size={vertical}/>
-      <Pin size={misto}/>
-      <Pin size={vertical}/>
-      <Pin size={horizontal}/>
-      <Pin size={misto}/>
-      <Pin size={horizontal}/>
-      <Pin size={vertical}/>
-      <Pin size={horizontal}/>
-      <Pin size={vertical}/>
-      <Pin size={misto}/>
-      <Pin size={vertical}/>
-      <Pin size={horizontal}/>
-      <Pin size={misto}/>
+      {state.openModal && <Modal />}
+      {DataImg.map((img) => {
+        return (
+          <Pin
+            key={img.title}
+            title={img.title}
+            description={img.description}
+            src={img.src}
+            size={img.size}
+          />
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default GridLayout
+export default GridLayout;
