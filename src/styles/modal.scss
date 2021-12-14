@@ -18,6 +18,19 @@
    width: 90%;
  }
 
+ .modalContainer strong:first-child{
+    margin-right: 25px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover{
+      color: #319795;
+    }
+ }
+
  .modalContainer div{
    display: flex;
    flex-direction: column;
