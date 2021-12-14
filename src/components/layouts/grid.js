@@ -7,19 +7,20 @@ import UserContext from '../../context';
 import "../../styles/layoutGrid.css";
 
 export const GridLayout = () => {
-  const { state, setState } = useContext(UserContext)
-
+  const { state } = useContext(UserContext)
   return (
     <div className="pinContainer">
       {state.openModal && <Modal />}
       {DataImg.map((img) => {
         return (
           <Pin
-            key={img.title}
+            key={img.id}
             title={img.title}
             description={img.description}
             src={img.src}
+            srcModal={img.srcModal}
             size={img.size}
+            id={img.id}
           />
         );
       })}

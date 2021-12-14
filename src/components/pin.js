@@ -2,16 +2,21 @@ import { useContext } from "react";
 import UserContext from "../context";
 
 import "../styles/pin.scss";
-export const Pin = ({ size, src, description, title }) => {
+export const Pin = ({ size, src, description, title, id }) => {
   const { state, setState } = useContext(UserContext);
 
-  const handleSetModal = (title, description, src) => {
+  const handleSetModal = () => {
+    if (state.openModal === true) {
+      setState({
+        ...state,
+        openModal: false
+      });
+      return
+    }
     setState({
       ...state,
       openModal: true,
-      title: title,
-      description: description,
-      src: src,
+      id: id,
     });
   };
 
@@ -19,11 +24,11 @@ export const Pin = ({ size, src, description, title }) => {
     <div
       className="pin"
       style={{ gridRowEnd: `span ${size}` }}
-      onClick={() => handleSetModal(src, description, title)}
+      onClick={() => handleSetModal(src, description, title, id)}
     >
-      <img src={src} alt={title} />
+      <img src={src} alt="ilust" />
 
-      <span>{description}</span>
+      <span>{title}</span>
     </div>
   );
 };
