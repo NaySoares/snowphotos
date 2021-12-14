@@ -3,9 +3,10 @@ import { createContext, useState } from 'react';
 const DEFAULT_VALUE = {
   state: {
     openModal: false,
+    id: 0,
     title: "",
     description: "",
-    src: "",
+    srcModal: "",
   },
   setState: () => {},
 }
