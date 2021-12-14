@@ -1,13 +1,14 @@
-import { useContext } from 'react'
+import { useContext, useState } from "react";
 import Pin from "../pin";
 import DataImg from "../../api/data";
-import Modal from '../modal'
-import UserContext from '../../context';
+import Modal from "../modal";
+import UserContext from "../../context";
 
 import "../../styles/layoutGrid.css";
 
 export const GridLayout = () => {
-  const { state } = useContext(UserContext)
+  const { state } = useContext(UserContext);
+
   return (
     <div className="pinContainer">
       {state.openModal && <Modal />}
