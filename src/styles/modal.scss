@@ -3,14 +3,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 10px;
   width: 90%;
   max-width: 800px;
+  height: 100vh;
   background-color: var(--dk-bg2);
   position: fixed;
   z-index: 10;
   right: 0;
+  top:0;
 
   animation: slide 0.5s ease-in-out;
 }
@@ -35,8 +37,7 @@
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   justify-content: center;
-   margin-top: 10px;
+   justify-content: center; 
    span{
      margin-top: 15px;
      text-indent: 1em;
