@@ -33,7 +33,7 @@ export const DataImg = [
     title: "Tive Aquele Mesmo Sonho de Novo",
     src: sameDream,
     srcModal: sameDreamModal,
-    description: "Tive Aquele Mesmo Sonho de Novo",
+    description: "Tive Aquele Mesmo Sonho de Novo, é uma história bem interessante que tive a chance de recriar a capa com o titulo em português, esse foi um trabalho relativamente simples.",
     size: 18,
   },
   {
@@ -41,7 +41,7 @@ export const DataImg = [
     title: "A Eminência nas Sombras",
     src: shadow,
     srcModal: shadowModal,
-    description: "A Eminência nas Sombras",
+    description: "Um dos títulos que eu mais gostei de fazer, os efeitos de transição e arabescos nele foram um dos pontos mais interessantes e legais de se replicar.",
     size: 40,
   },
   {
@@ -49,7 +49,7 @@ export const DataImg = [
     title: "Matador de Goblins",
     src: goblin,
     srcModal: goblinModal,
-    description: "Matador de Goblins",
+    description: "Apesar de não aparentar complicada, foi bem difícil conseguir a fonte original, por alguns momentos até tentei usar fontes diferentes que chegassem próximo da original, mas no fim desisti e continuei minha busca, por sorte encontrei e pude usá-la nesse título.",
     size: 40,
   },
   {
@@ -57,15 +57,15 @@ export const DataImg = [
     title: "Como um Herói Realista Reconstruiu o Reino",
     src: heroi,
     srcModal: heroiModal,
-    description: "Como um Herói Realista Reconstruiu o Reino",
+    description: 'A versão americana dessa capa tem alguns detalhes que parecem que foram ignoradas na sua edição, por exemplo os textos que se cruzam não estão no mesmo plano, sendo o horizontal abaixo do vertical, o que faz o efeito de borda cobrir um pouco as letras, na minha versão achei melhor "ajustar" isso.',
     size: 40,
   },
   {
     id: 6,
-    title: "JK Haru é uma Profissional do Sexo em Outro Mundo",
+    title: "JK Haru é uma Profissional do Sexo em Outro Mundo: Summer",
     src: jkHaru,
     srcModal: jkHaruModal,
-    description: "JK Haru é uma Profissional do Sexo em Outro Mundo",
+    description: "JK Haru essa capa foi bem divertida de fazer, nenhuma das fontes que eu usei são as originais, mas são as mais próximas que consegui, teve vários pequenos ajustes mas no fim, gostei bastante do resultado.",
     size: 40,
   },
   {
@@ -73,7 +73,7 @@ export const DataImg = [
     title: "Um Misterioso Trabalho Chamado Nobunaga",
     src: nobunaga,
     srcModal: nobunagaModal,
-    description: "Um Misterioso Trabalho Chamado Nobunaga",
+    description: "Nobunaga... Poucas obras me deram tanto trabalho quando esse Nobunaga, a edição de clean e redraw foram realmente demoradas e cansativas, os vários estilos no texto e posições internas não padronizadas complicaram ainda mais o trabalho, dei o meu melhor mas talvez, um dia, eu refaça essa capa.",
     size: 40,
   },
 ];
