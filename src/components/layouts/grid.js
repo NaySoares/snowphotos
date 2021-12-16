@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import Pin from "../pin";
 import DataImg from "../../api/data";
 import Modal from "../modal";
